@@ -136,7 +136,7 @@ for phrase in speech:
 <h1>6</h1>
 
 <p>
-après installation et start de pulseaudio sur raspberry 3 buster
+sur raspberry 3 buster
 </p>
 <div class="zim-object">
 <pre><code class="sh">aptitude install pulseaudio
