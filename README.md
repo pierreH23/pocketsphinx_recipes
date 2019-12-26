@@ -58,7 +58,38 @@ Puis construire un lm sur mesure pour ce vocabulaire en expurgeant l'original de
 
 <p>
 installer et lancer pocketsphinx
+</p><h1>6</h1>
+
+<p>
+après installation et start de pulseaudio sur raspberry 3 buster
 </p>
+<div class="zim-object">
+<pre><code class="sh">aptitude install pulseaudio
+pulseaudio --start
+aptitude install pocketsphinx
+pocketsphinx_continuous -dict fr.dict -hmm cmusphinx-fr-ptm-5.2/ -lm small.lm -inmic yes</code></pre>
+</div>
+
+<p>
+Un mot parmi un vocabulaire de taille 10 détecté en environ 2 secondes (un coeur chargé sporadiquement à 20%)
+</p>
+
+<br>
+<br>
+<br>
+
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+	</div>
+
+	
+
+</div>
 <div class="zim-object">
 <pre><code class="sh">aptitude install pocketsphinx
 pocketsphinx_continuous -dict fr.dict -hmm cmusphinx-fr-ptm-5.2/ -lm small.lm -inmic yes</code></pre>
@@ -123,15 +154,4 @@ Un mot parmi un vocabulaire de taille 10 détecté en environ 2 secondes (un coe
 <br>
 
 
-	</div>
-
-	<br />
-
-	<div class='page-footer'>
-
-	</div>
-
-	
-
-</div>
 
